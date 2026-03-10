@@ -40,7 +40,7 @@ if choice2 == 'Informe de partido':
         n_partido)
     df = df[df.Rival==menu_match]
 
-    etapas_juego = ['Ataque', 'Defensa','Pases']
+    etapas_juego = ['Ataque', 'Defensa']
 
     menu_subinforme = st.sidebar.selectbox(
         "Etapa de juego",
@@ -70,10 +70,7 @@ if choice2 == 'Informe de partido':
             tipo_tiros_goles(df,'Ocasión rival')
         
         mostrar_tablas_zonas(df, defensa)
-    
-    if menu_subinforme == 'Pases':
-        pass
         
 
 if choice2 == 'Informe acumulado':
-    st.write("NO DISPONIBLE")
+    st.write("DISPONIBLE CUANDO SE TENGAS MÁS DE UN PARTIDO")
